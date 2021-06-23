@@ -1,0 +1,47 @@
+.navContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	font-size: 16px;
+	font-weight: 600;
+
+	h2 {
+		font-size: 24px;
+		letter-spacing: -1px;
+		margin-right: 2rem;
+		color: hsl(245deg, 100%, 60%);
+	}
+}
+.navMenu {
+	width: auto;
+	flex-grow: 1;
+	color: hsl(222deg, 22%, 5%);
+
+	ul {
+		display: flex;
+		list-style: none;
+
+		a {
+			text-decoration: none;
+			color: hsl(222deg, 22%, 5%);
+		}
+
+		li {
+			padding: 10px;
+			margin: 10px;
+		}
+	}
+}
+.icons {
+	button {
+		width: 40px;
+		background-color: transparent;
+		border: none;
+		outline: none;
+		color: hsl(222deg, 22%, 5%);
+	}
+}
