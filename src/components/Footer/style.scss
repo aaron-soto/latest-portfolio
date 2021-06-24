@@ -9,7 +9,7 @@
 	height: 100%;
 	width: 100%;
 	justify-content: space-between;
-	padding: 20px !important;
+	padding: 25px !important;
 
 	.footerLeft {
 		height: 100%;
@@ -37,6 +37,8 @@
 		align-items: center;
 
 		.links {
+			margin-left: 5rem;
+			height: 150px;
 			p {
 				color: #727272;
 			}
@@ -46,6 +48,7 @@
 				a {
 					text-decoration: none;
 					color: #585858;
+					font-size: 12px;
 					font-weight: 600;
 				}
 

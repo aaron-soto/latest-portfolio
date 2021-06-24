@@ -1,5 +1,6 @@
 import { Sun, Volume2, Rss } from "react-feather";
 import "./style.scss";
+import { Boop } from "../../components/Boop";
 
 export const Navbar = () => {
 	return (
@@ -22,15 +23,21 @@ export const Navbar = () => {
 				</ul>
 			</div>
 			<div className="icons">
-				<button>
-					<Sun />
-				</button>
-				<button>
-					<Volume2 />
-				</button>
-				<button>
-					<Rss />
-				</button>
+				<Boop scale={1.2} timing={200}>
+					<button href="#">
+						<Sun />
+					</button>
+				</Boop>
+				<Boop scale={1.2} timing={200}>
+					<button href="#">
+						<Volume2 />
+					</button>
+				</Boop>
+				<Boop scale={1.2} timing={200}>
+					<button href="#">
+						<Rss />
+					</button>
+				</Boop>
 			</div>
 		</div>
 	);

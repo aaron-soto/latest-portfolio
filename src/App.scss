@@ -9,6 +9,8 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import "./assets/Variables.scss";
 
 // GENERAL STYLINGS --------------------------/
 * {
@@ -17,18 +19,28 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: "wotfardregular";
+	font-family: "wotfardregular", Futura, -apple-system, sans-serif;
 	line-height: 1.6;
 	font-size: 19px;
+	overflow-x: hidden;
+	color: $text-color-primary;
+	background-color: $bg-primary;
 }
 .navSpacer {
 	height: 45px;
 	width: 100%;
-	background-color: #c8e4f5;
+	background-color: $bg-secondary;
 }
 .App {
 	width: 100%;
 	position: relative;
+}
+
+::selection {
+	background: $color-secondary; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+	background: $color-secondary; /* Gecko Browsers */
 }
 
 // HELPERS -----------------------------------/
@@ -37,4 +49,83 @@ body {
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 0 32px;
+}
+
+.header {
+	min-height: 30vh;
+	width: 100%;
+	background-color: $bg-secondary;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	.svgWrapper {
+		position: relative;
+		z-index: 2;
+		bottom: 50%;
+	}
+
+	svg {
+		position: relative;
+		margin-bottom: -10px;
+		path {
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+		}
+	}
+}
+
+.socialLinks {
+	display: flex;
+	justify-content: flex-end;
+	position: sticky;
+	top: 2rem;
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		background-color: $bg-secondary;
+		border-radius: 10px;
+		align-self: flex-start;
+
+		li {
+			height: 40px;
+			display: flex;
+			align-items: center;
+			padding: 0 1rem;
+			margin: 5px;
+			border-radius: 5px;
+			transition: all 0.2s ease-out;
+
+			&:hover {
+				background-color: $bg-primary;
+			}
+
+			a {
+				height: 100%;
+				display: flex;
+				align-items: center;
+				color: $color-secondary;
+			}
+		}
+	}
+}
+
+.fancy {
+	font-family: "Permanent Marker", cursive;
+	color: hsl(333deg, 100%, 45%);
+	font-size: 1.2;
+	letter-spacing: 2px;
+}
+.textLink {
+	color: $color-secondary;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	transition: all 0.2s ease-out;
+
+	&:hover {
+		border-bottom: 2px solid $color-secondary;
+	}
 }

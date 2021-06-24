@@ -1,0 +1,49 @@
+.sectionHeaderWorks {
+	color: hsl(333deg, 100%, 45%);
+	font-size: 1.4rem;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.sectionContact {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem !important;
+
+	input {
+		font-size: 18px;
+		padding: 0.5rem;
+		width: 380px;
+		margin: 0 auto;
+		margin-bottom: 2rem;
+		border-radius: 10px;
+		border: none;
+		outline: none;
+		background-color: #c8e4f567;
+	}
+	textarea {
+		width: 380px;
+		margin: 0 auto;
+		font-size: 18px;
+		padding: 0.5rem;
+		border-radius: 10px;
+		border: none;
+		outline: none;
+		background-color: #c8e4f567;
+		font-family: "wotfardregular", Futura, -apple-system, sans-serif;
+	}
+	button {
+		width: 380px;
+		margin: 1rem auto;
+		padding: 1rem 0;
+		border: none;
+		background-color: hsl(333deg, 100%, 45%);
+		color: #ffffff;
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		cursor: pointer;
+		border-radius: 10px;
+	}
+}

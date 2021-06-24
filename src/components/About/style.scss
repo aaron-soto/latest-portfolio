@@ -1,0 +1,56 @@
+@import "../../assets/Variables.scss";
+
+.header {
+	position: relative;
+}
+
+.bodytest {
+	position: relative;
+	z-index: 3;
+	display: flex;
+	margin-bottom: 10rem !important;
+
+	.sectionHeader {
+		color: $color-secondary;
+		font-size: 2rem;
+	}
+
+	.mainLeft {
+		width: 70%;
+	}
+
+	p {
+		margin-bottom: 2rem;
+	}
+}
+
+.resumeBtns {
+	display: flex;
+	margin: 2rem 0;
+
+	button {
+		padding: 10px 20px;
+		background-color: #c8e4f5;
+		color: $text-color-primary;
+		border: none;
+		border-radius: 10px;
+		font-size: 18px;
+		font-weight: 600;
+		margin-right: 1rem;
+		cursor: pointer;
+		transition: all 0.3s ease-out;
+
+		&:hover {
+			background-color: #deeef8;
+		}
+	}
+}
+
+.mainRight {
+	width: 30%;
+}
+.aboutSocial {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}

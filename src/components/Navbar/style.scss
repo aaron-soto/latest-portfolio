@@ -1,3 +1,5 @@
+@import "../../assets/Variables.scss";
+
 .navContainer {
 	display: flex;
 	justify-content: space-between;
@@ -13,13 +15,13 @@
 		font-size: 24px;
 		letter-spacing: -1px;
 		margin-right: 2rem;
-		color: hsl(245deg, 100%, 60%);
+		color: $color-secondary;
 	}
 }
 .navMenu {
 	width: auto;
 	flex-grow: 1;
-	color: hsl(222deg, 22%, 5%);
+	color: $text-color-primary;
 
 	ul {
 		display: flex;
@@ -27,7 +29,7 @@
 
 		a {
 			text-decoration: none;
-			color: hsl(222deg, 22%, 5%);
+			color: $text-color-primary;
 		}
 
 		li {
@@ -42,6 +44,7 @@
 		background-color: transparent;
 		border: none;
 		outline: none;
-		color: hsl(222deg, 22%, 5%);
+		color: $text-color-primary;
+		cursor: pointer;
 	}
 }
